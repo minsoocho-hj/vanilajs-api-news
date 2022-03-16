@@ -20,10 +20,10 @@
 - Media query
 
 ### 💻 Library
-- momnet js https://momentjs.com/
+- moment js https://momentjs.com/
 
 ### 📈 NEWS API 
-- newscatcherapi https://docs.newscatcherapi.com/
+- </newscatcher> https://docs.newscatcherapi.com/
 
 ### 💪 For Improving 
 
