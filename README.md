@@ -21,6 +21,7 @@
 
 ### 💻 Library
 - moment js https://momentjs.com/
+- > in order to show article's uploaded time
 
 ### 📈 NEWS API 
 - </newscatcher> https://docs.newscatcherapi.com/
