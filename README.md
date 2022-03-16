@@ -19,8 +19,11 @@
 - Javscript
 - Media query
 
+### 💻 Library
+- momnet js https://momentjs.com/
+
 ### 📈 NEWS API 
-- https://docs.newscatcherapi.com/
+- newscatcherapi https://docs.newscatcherapi.com/
 
 ### 💪 For Improving 
 
