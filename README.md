@@ -27,5 +27,5 @@
 
 ### 💪 For Improving 
 
-- Focus to current added task in List.
-- Detailed media query feature
+- Design
+- Add pagenation
