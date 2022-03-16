@@ -12,7 +12,7 @@
 - Responsive web page
 - pagenation feature (tbc)
 
-### 💻 Tach stacks
+### 💻 Tech stacks
 
 - html
 - css
