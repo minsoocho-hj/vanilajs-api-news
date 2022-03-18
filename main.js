@@ -110,11 +110,12 @@ const renderError = (errorMessage) => {
 
 const renderPagination = () => {
   let pageHTML = "";
-  let pageGroup = Math.ceil(page / 10);
-  let lastPage = pageGroup * 10;
-  let firstPage = lastPage - 9;
+  let pageGroup = Math.ceil(page / 5);
+  let lastPage = pageGroup * 5;
+  let firstPage = lastPage - 4;
 
-  pageHTML = `<li class="page-item">
+  if (firstPage >= 6) {
+    pageHTML = `<li class="page-item">
                 <a class="page-link" href="#" aria-label="Previous" onclick="moveToPage(1)">
                 <span aria-hidden="true">&laquo;</span>
                 </a>
@@ -126,6 +127,7 @@ const renderPagination = () => {
                 <span aria-hidden="true">&lt;</span>
                 </a>
               </li>`;
+  }
 
   for (let i = firstPage; i <= lastPage; i++) {
     pageHTML += `<li class="page-item ${
@@ -133,7 +135,8 @@ const renderPagination = () => {
     }"><a class="page-link" href="#" onclick="moveToPage(${i})">${i}</a></li>`;
   }
 
-  pageHTML += `<li class="page-item">
+  if (lastPage < totalPages) {
+    pageHTML += `<li class="page-item">
                 <a class="page-link" href="#" aria-label="Previous" onclick="moveToPage(${
                   page + 1
                 })">
@@ -145,6 +148,7 @@ const renderPagination = () => {
                 <span aria-hidden="true">&raquo;</span>
                 </a>
               </li>`;
+  }
 
   paginationUl.innerHTML = pageHTML;
 };
