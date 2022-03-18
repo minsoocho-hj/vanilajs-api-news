@@ -112,7 +112,11 @@ const renderPagination = () => {
   let pageHTML = "";
   let pageGroup = Math.ceil(page / 5);
   let lastPage = pageGroup * 5;
-  let firstPage = lastPage - 4;
+  let firstPage = lastPage - 4 <= 0 ? 1 : lastPage - 4; // 첫그룹이 5이하이면
+
+  if (lastPage > totalPages) {
+    lastPage = totalPages;
+  }
 
   if (firstPage >= 6) {
     pageHTML = `<li class="page-item">
