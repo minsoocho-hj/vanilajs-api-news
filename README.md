@@ -15,7 +15,7 @@
 
 - html
 - css
-- Javscript
+- Javascript
 - Media query
 
 ### 💻 Library
