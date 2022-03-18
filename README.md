@@ -17,6 +17,7 @@
 - css
 - Javascript
 - Media query
+- Bootstrap
 
 ### 💻 Library
 - moment js https://momentjs.com/
