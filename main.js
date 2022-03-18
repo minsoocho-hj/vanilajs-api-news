@@ -1,3 +1,7 @@
+require("dotenv").config();
+
+const client = new ApiClient(process.env.API_KEY);
+
 const newsSection = document.querySelector(".news-section");
 const newsCategory = document.querySelectorAll(".news-category");
 const searchInput = document.querySelector(".search-form");
@@ -9,14 +13,13 @@ let url;
 let errorMessage = "";
 let totalPages = 1;
 let page = 1;
-let pageSize = 1;
 
 const fetchAPI = () => {
   url.searchParams.set("page", page);
   console.log(url);
   fetch(url, {
     headers: {
-      "x-api-key": "16Hyli3X6_8cPXeBjiKJfaS7cuqxqUy-_s0dxlSC9tg",
+      "x-api-key": client,
       "Content-Type": "application/json",
     },
   })
